@@ -1,0 +1,56 @@
+/*! themes/_colors.scss                                                             | olikit  */
+
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. User colors change
+1. Template Colors
+=============================================================================
+***/
+
+/*  0. User colors change
+========================================================================== */
+$primary:#FFA849;
+$secondary:#54538B;
+$tertiary:#75E8F0;
+$dark:#54538B;
+
+$primary-bg:#54538B;
+
+$dark-bg:#3639A3;
+
+
+
+$grad1: linear-gradient(45deg, #231F73, #D72F86);
+$grad2: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+$grad3: linear-gradient(to top right, #3629a7, #e445de);
+
+$white:#fff;
+$dark-2:rgb(32, 32, 32);
+$dark-3:rgb(19, 19, 19);
+$red:#ff5f7c;
+$green:#54eb9f;
+
+
+
+/*  1. Template Colors
+========================================================================== */
+$header-dark:#000;
+
+$navbar-dark:rgba(0, 0, 0, 0.9);
+
+
+$hero-dark:#313896;
+$card-dark2:#313896;
+
+
+$bg-grey:rgb(233, 233, 233);
+$section-dark2:#313896;
+$section-dark:#161616;
+$card-dark:#34373B;
+$section-grey:#efefef;
+$hero-white:#F9FAFF;
+$footer-dark:#313896;
+$plan-dark:#313896;
+$plan:#EFEFFF;

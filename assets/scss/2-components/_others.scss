@@ -1,0 +1,210 @@
+/*====================================
+    ========= Lists
+    =====================================*/
+.list {
+  margin-bottom: 1rem;
+  box-shadow: none;
+  background: none;
+  border: none;
+
+  .list-item {
+    display: flex;
+
+    .icon {
+      color: $primary;
+      margin-right: 1rem;
+    }
+
+    &.has-style1 {
+      background: $bg-grey;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.box {
+  padding: 40px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  &:hover {
+    .box-title {
+      color: $primary;
+    }
+    ion-icon {
+      font-size: 2.3rem;
+      color: #54538a;
+    }
+  }
+
+  .box-particles {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .box-particles2 {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+  }
+
+  .box-num {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  .col,
+  .col-auto {
+    padding: 0;
+    margin: 0;
+  }
+
+  .col {
+    margin-left: 10px;
+  }
+
+  .box-icon {
+    ion-icon {
+      font-size: 2rem;
+      color: #54538a;
+      transition: 0.25s;
+    }
+  }
+
+  .box-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    transition: 0.25s;
+  }
+
+  .box-desc {
+    font-size: 15px;
+  }
+
+  &.has-primary-bg {
+    background: $primary;
+    transition: 0.2s cubic-bezier(0.5, 0, 0.35, 1);
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 14px 33px -3px rgba(0, 0, 0, 0.098);
+    }
+
+    .box-icon {
+      ion-icon {
+        color: $white;
+      }
+    }
+
+    .box-title {
+      color: $white;
+    }
+
+    .box-desc {
+      color: $white;
+    }
+  }
+
+  &.has-blue-text {
+    .box-title {
+      color: #3639a3;
+    }
+
+    .box-desc {
+      color: #3639a3;
+    }
+
+    svg {
+      color: #3639a3;
+    }
+
+    ion-icon {
+      color: #3639a3;
+    }
+
+    path {
+      color: #3639a3;
+    }
+  }
+
+  &.has-secondary-bg {
+    background: $secondary;
+    transition: 0.2s cubic-bezier(0.5, 0, 0.35, 1);
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 14px 33px -3px rgba(0, 0, 0, 0.098);
+    }
+
+    .box-icon {
+      ion-icon {
+        color: $white;
+      }
+    }
+
+    .box-title {
+      color: $white;
+    }
+
+    .box-desc {
+      color: $white;
+    }
+  }
+
+  &.has-shadow {
+    background: $white;
+    box-shadow: 0 0 0 0 #eee;
+    box-shadow: 0 14px 33px -3px rgba(0, 0, 0, 0.078);
+    transition: 0.2s cubic-bezier(0.5, 0, 0.35, 1);
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 14px 33px -3px rgba(0, 0, 0, 0.098);
+    }
+  }
+  &.has-dark {
+    background: #54538a ;
+    color: white;
+    .box-title {
+      color: white;
+    }
+    .box-desc {
+      color: white;
+    }
+    ion-icon {
+        color: $white !important;
+      }
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 14px 33px -3px rgba(0, 0, 0, 0.098);
+    }
+  }
+
+  &.has-left-icon {
+    .box-title {
+      margin: 5px 0 10px;
+    }
+  }
+  &.has-transparent {
+    padding: 0;
+    background: transparent !important;
+    .box-title {
+      color: white !important;
+    }
+    ion-icon {
+      color: $white !important;
+    }
+  }
+}

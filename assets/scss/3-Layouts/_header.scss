@@ -1,0 +1,679 @@
+/* Layouts > _header.scss                                                    | olikit - creabik */
+
+/*** TABLE OF CONTENTS
+==================================================
+0. Hero in index page
+=============================================== ***/
+
+
+.header {
+    position: relative;
+    /*====================================
+    =========  In Index page
+    =====================================*/
+    &.in-index {
+        margin-bottom: 0;
+        color: $white;
+        position: relative;
+        z-index: 0;
+        height: 100vh;
+        overflow: hidden;
+
+        background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);
+        .header-wrap {
+            padding: 10rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+
+            @include md {
+                padding: 70px 0 0;
+                text-align: center;
+
+            }
+        }
+
+        .header-img {
+            max-height: 7rem;
+        }
+
+        .header-title {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 30px;
+            text-align: center;  
+                      
+            background: linear-gradient(to right, #202F45 ,
+            #6e8bb2 );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include sm {
+                font-size: 35px;
+                text-align: center;
+                margin-top: 1rem;
+
+            }
+        }
+
+        .screen {
+            width: 150%;
+        }
+
+        .header-desc {
+            color: #fff;
+            margin-bottom: 30px;
+
+
+            @include sm {
+                font-size: 15px;
+            }
+        }
+
+        .line-menu {
+            background: #f3f3f3;
+        }
+
+        @include md {
+            padding-bottom: 80px;
+        }
+
+
+
+    }
+
+
+    /*====================================
+    ========= has style1
+    =====================================*/
+    &.has-style1 {
+        overflow-x: hidden;
+        background: url("../../assets/images/bg/header-bg1.svg") 41rem -30rem no-repeat;
+
+        &.is-grad {
+            overflow: hidden;
+            background: url("../../assets/images/others/header-bg-grad.svg") -200px -250px no-repeat !important;
+        }
+        .navbar{
+            a{
+                color: #0D1A2F;
+            }
+        }
+
+        .line-menu {
+            background: #55548b;
+        }
+
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            padding: 40px 0 80px;
+
+        }
+
+        .header-title {
+            font-size: 3.5rem;
+            color: #0D1A2F;
+            max-width: 60rem;
+            margin-bottom: 40px;
+
+            @include lg {
+                text-align: center;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            @include md {
+                text-align: center;
+                font-size: 35px;
+                margin-bottom: 20px;
+
+
+            }
+        }
+
+        .header-desc {
+            color: #0D1A2F !important;
+            max-width: 30rem;
+            margin-bottom: 40px;
+
+            @include lg {
+                text-align: center;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            @include md {
+                margin-bottom: 20px;
+
+
+            }
+        }
+
+        .header-img {
+            img {
+                width: 150%;
+            }
+
+            @include lg {
+                img {
+                    margin-top: 20px;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .header-shape {
+            position: absolute;
+            transform: scale(.9);
+            left: -4rem;
+            top: -10rem;
+            z-index: -1;
+        }
+    }
+
+    /*====================================
+    ========= has style1
+    =====================================*/
+    &.has-style2 {
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 40px 0 80px;
+
+        }
+
+        .header-title {
+            font-size: 3.5rem;
+            color: #000;
+            max-width: 60rem;
+            margin-bottom: 40px;
+
+            @include md {
+                font-size: 40px;
+            }
+        }
+
+        .header-desc {
+            color: #000;
+            max-width: 30rem;
+            margin-bottom: 40px;
+        }
+
+        .header-img {
+            img {
+                width: 100%;
+            }
+
+            @include md {
+                display: none;
+            }
+        }
+
+        .header-shape {
+            position: absolute;
+            transform: scale(.9);
+            left: -4rem;
+            top: -10rem;
+            z-index: -1;
+        }
+
+        .hero-particles .particle-6 {
+            position: absolute;
+            height: 70em;
+            width: 79em;
+            top: -30em;
+            right: -30em;
+            background: #fff8f5;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            z-index: -1;
+        }
+    }
+
+    /*====================================
+    ========= has style1
+    =====================================*/
+    &.has-style3 {
+        overflow: hidden;
+        background: $primary-bg;
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url(../images/bg/pattern-bg.png);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-size: cover;
+        }
+
+        .line-menu {
+            background: $white;
+        }
+
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 80px 0 0;
+            flex-direction: column;
+
+        }
+
+        .bottom-img {
+            width: 100%;
+            position: relative;
+            bottom: -3px;
+
+        }
+
+        .header-title {
+            font-size: 3.5rem;
+            color: #fff;
+            max-width: 60rem;
+            margin-bottom: 40px;
+            text-align: center;
+
+            @include md {
+                font-size: 40px;
+            }
+        }
+
+        .header-desc {
+            color: #fff;
+            max-width: 40rem;
+            margin-bottom: 40px;
+            text-align: center;
+
+        }
+
+        .header-img {
+            img {
+                width: 150%;
+            }
+
+            @include md {
+                display: none;
+            }
+        }
+
+        .header-shape {
+            position: absolute;
+            transform: scale(.9);
+            left: -4rem;
+            top: -10rem;
+            z-index: -1;
+        }
+    }
+
+    /*====================================
+    ========= has style4
+    =====================================*/
+    &.has-style4 {
+        background: $dark ;
+        overflow: visible;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+
+        background-image: url(../images/bg/path.png) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top right;
+        &::before {
+            content: "";
+            background: url( ../../images/bg/path.svg);
+            background-size: contain;
+            background-position: bottom;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            background: white;
+            z-index: -1;
+        }
+
+        .line-menu {
+            background: $white;
+        }
+
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 80px 0 0;
+            flex-direction: column;
+
+        }
+
+        .bottom-img {
+            width: 100%;
+
+
+        }
+
+        .soft-screens {
+            margin-top: 40px;
+
+            img {
+                width: 100%;
+                max-width: 60rem;
+                box-shadow: 0 35px 66px 0 rgba(0, 0, 0, 0.137);
+                border-radius: 10px;
+
+            }
+        }
+
+        .header-title {
+            font-size: 3.5rem;
+            color: $white;
+            max-width: 60rem;
+            margin-bottom: 40px;
+            text-align: center;
+
+            @include md {
+                font-size: 40px;
+            }
+        }
+
+        .header-desc {
+            color: $white;
+            max-width: 40rem;
+            margin-bottom: 40px;
+            text-align: center;
+
+        }
+
+        .header-img {
+            img {
+                width: 150%;
+            }
+
+            @include md {
+                display: none;
+            }
+        }
+
+        .header-shape {
+            position: absolute;
+            transform: scale(.9);
+            left: -4rem;
+            top: -10rem;
+            z-index: -1;
+        }
+    }
+
+    /*====================================
+    ========= has style1
+    =====================================*/
+    &.has-style-bg {
+        overflow: hidden;
+        background-size: cover;
+        &.is-grad {
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 100%;
+                width: 100%;
+                background: $grad2;
+                position: absolute;
+                opacity: .8;
+            }
+        }
+
+
+        .line-menu {
+            background: $white;
+        }
+
+
+
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 200px 0 200px;
+            flex-direction: column;
+
+            @include md {
+                padding: 70px 0;
+            }
+
+        }
+
+        .header-title {
+            font-size: 4.5rem;
+            color: #fff;
+            max-width: 50rem;
+            margin-bottom: 20px;
+            text-align: center;
+
+            @include md {
+                font-size: 40px;
+            }
+        }
+
+        .header-desc {
+            color: #fff;
+            max-width: 40rem;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+
+        .header-img {
+            img {
+                width: 150%;
+            }
+
+            @include md {
+                display: none;
+            }
+        }
+
+        .header-shape {
+            position: absolute;
+            transform: scale(.9);
+            left: -4rem;
+            top: -10rem;
+            z-index: -1;
+        }
+    }
+}
+
+.header-page {
+    background: $primary-bg;
+    position: relative;
+    z-index: 0;
+    background: $dark url(../images/bg/path.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -3px;
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/bg/devider.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    &.grey{
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -3px;
+            height: 100%;
+            width: 100%;
+            background-image: url(../images/bg/devider-grey.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+        &::before{
+display: none;
+        }
+    }
+    .line-menu {
+        background: $white !important;
+    }
+
+    .header-title {
+        font-size: 3.5rem;
+        color: #fff;
+        text-align: center;
+
+        &.is-center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include sm {
+            font-size: 2.5rem;
+        }
+    }
+
+    .header-description {
+        color: rgb(210, 201, 235);
+        max-width: 50rem;
+        margin: 40px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-wrap {
+        padding: 9rem 0;
+
+        @include sm {
+            padding: 3rem 0;
+        }
+    }
+}
+
+.header-page2 {
+    background: #FAF9FC;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+
+    .header-title {
+        font-size: 3.5rem;
+        color: $dark;
+        max-width: 60rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include sm {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    .header-desc {
+        color: $dark;
+        max-width: 30rem;
+        margin-bottom: 40px;
+    }
+
+    .header-wrap {
+        padding: 100px 0;
+
+        @include sm {
+            padding: 50px 0;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        right: -5rem;
+        bottom: -10rem;
+        z-index: -1;
+
+        @include sm {
+            transform: scale(.5);
+        }
+    }
+}
+
+.header-changelog {
+    background: #f4f5fb;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+    .header-title {
+        font-size: 3.5rem;
+        color: $dark;
+        max-width: 60rem;
+        margin-bottom: 40px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include sm {
+            font-size: 2.6rem;
+        }
+
+    }
+
+    .header-desc {
+        color: $dark;
+        max-width: 30rem;
+        margin-bottom: 40px;
+    }
+
+    .header-wrap {
+        padding: 6rem 0;
+    }
+
+    .shape {
+        position: absolute;
+        right: -5rem;
+        z-index: -1;
+        bottom: 0;
+    }
+}
+
+.phone {
+    padding: .2rem;
+    background: #fff;
+    vertical-align: center;
+    border-radius: .5rem;
+
+    ion-icon {
+        margin-right: .5rem;
+    }
+}
+.overlay{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .6;
+    }
+
+}
+.border-top{
+border-top: 1px solid rgba(255, 255, 255, 0.459) ;
+}

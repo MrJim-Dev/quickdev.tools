@@ -1,0 +1,25 @@
+// style.scss                                          olikit - creabik 
+// =================================== Helpers
+@import "1-helpers/_colors.scss";
+@import "1-helpers/_mixins.scss";
+@import "1-helpers/_variables.scss";
+@import "1-helpers/_classes.scss";
+// =================================== Base
+@import "0-base/_base.scss";
+// =================================== Components 
+@import "2-components/_buttons.scss";
+@import "2-components/_forms.scss";
+@import "2-components/_cards.scss";
+@import "2-components/_others.scss";
+
+// =================================== Layouts
+@import "3-Layouts/_navbar.scss";
+@import "3-Layouts/_header.scss";
+@import "3-Layouts/_sections.scss";
+@import "3-Layouts/_footer.scss";
+@import "3-Layouts/_others.scss";
+
+// =================================== Pages
+@import "4-Pages/_pages.scss";
+@import "4-Pages/_index.scss";
+@import "4-Pages/_account.scss";

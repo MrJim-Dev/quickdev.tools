@@ -1,0 +1,39 @@
+{
+	"tools": [
+		{
+			"name": "Glassmorphism CSS Generator",
+			"description": "Generate CSS for creating glassmorphism UI design",
+			"thumbnail": "https://ui.glass/img/ui-glass-mockup.png",
+			"url": "https://ui.glass/generator/",
+			"category": "Design"
+		},
+		{
+			"name": "Neumorphism | Soft UI CSS Generator",
+			"description": "Generate CSS for creating neumorphism or soft UI design",
+			"thumbnail": "https://neumorphism.io/static/neumorphism-io-preview.png",
+			"url": "https://neumorphism.io/#e0e0e0",
+			"category": "Design"
+		},
+		{
+			"name": "SVG Shape Generator",
+			"description": "Generate SVG shapes for web design",
+			"thumbnail": "https://www.softr.io/assets/thumbnails/tools/svg-shape-generator.png",
+			"url": "https://www.softr.io/tools/svg-shape-generator",
+			"category": "Design"
+		},
+		{
+			"name": "SVG Wave Generator",
+			"description": "Generate SVG waves for web design",
+			"thumbnail": "https://www.softr.io/assets/thumbnails/tools/svg-wave-generator.png",
+			"url": "https://www.softr.io/tools/svg-wave-generator",
+			"category": "Design"
+		},
+		{
+			"name": "Compress Images",
+			"description": "Compress images for faster loading web pages",
+			"thumbnail": "https://tinypng.com/images/social/website.jpg",
+			"url": "https://tinypng.com/",
+			"category": "Development"
+		}
+	]
+}

@@ -1,0 +1,845 @@
+/*=========================
+======= Blog
+===========================*/
+.widget-title {
+    color: $primary;
+}
+
+.post-wrap {
+    margin-left: 20px;
+    -ms-grid-column: 20px;
+    margin-top: 50px;
+    background: white;  
+    border-radius: 10px;
+
+
+
+
+    .post-img {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px 0px rgba(130, 136, 147, 0.1);
+
+
+        &::after {
+            content: "Read article";
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($primary, .8);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            opacity: 0;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0;
+            transition: all 0.15s ease-in 0s;
+            z-index: 1;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+            transition: .25s;
+        }
+    }
+
+    .post-content {
+        position: relative;
+        background: $white;
+        border-radius: 0 10px 10px 10px;
+        padding: 0 0 30px;
+        margin: 0 15px 30px;
+
+
+        .post-tag {
+            margin-top: 20px;
+            margin-right: .5rem;
+            display: flex;
+
+            .tag-item {
+                color: $primary;
+                font-size: 13px;
+                padding: 4px 18px;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 1.5;
+                color: rgb(255, 255, 255);
+                background-color: rgb(46, 46, 46);
+                text-transform: uppercase;
+                background: #000;
+                border-radius: 2rem;
+
+
+            }
+        }
+
+        .post-date {
+            font-size: 13px;
+
+            color: #615f6c;
+        }
+
+        .post-author {
+            font-size: 13px;
+
+            a {
+                color: $primary;
+            }
+        }
+
+        .post-title {
+            margin: 20px 0;
+
+            a {
+                color: #000;
+                transition: .25s;
+                font-size: 24px;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .post-description {
+            margin-bottom: 20px;
+        }
+    }
+
+    &.in-first-post {
+        border-bottom: 4px solid rgb(242, 242, 242);
+        margin-bottom: 30px;
+
+        margin-top: 0;
+
+        .post-content {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+
+        .post-title {
+            a {
+                font-size: 30px;
+                line-height: 1.4;
+
+                @include sm {
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.post-wrap2 {
+    margin-bottom: 30px;
+
+    .post-img {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: .25s;
+        }
+    }
+
+    .post-content {
+        position: relative;
+        border-radius: 0 10px 10px 10px;
+        padding: 0 0 30px;
+
+        .post-tag {
+            margin-right: .5rem;
+            display: flex;
+
+            .tag-item {
+                color: $primary;
+                font-size: 13px;
+                padding: 15px 0;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 1.5;
+                color: rgb(100, 100, 100);
+                text-transform: uppercase;
+
+
+            }
+        }
+
+        .post-date {
+            font-size: 13px;
+
+            color: #615f6c;
+        }
+
+        .post-author {
+            font-size: 13px;
+
+            a {
+                color: $primary;
+            }
+        }
+
+        .post-title {
+            margin: 0 0 20px;
+
+            a {
+                color: #000;
+                transition: .25s;
+                font-size: 24px;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .read-more {
+            color: #000;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                height: 2px;
+                width: 25%;
+                background: $primary;
+                transition: .25s;
+
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+
+                }
+            }
+        }
+
+        .post-description {
+            margin-bottom: 20px;
+        }
+    }
+
+    &.in-first-post {
+        border-bottom: 4px solid rgb(242, 242, 242);
+        margin-bottom: 30px;
+
+        margin-top: 0;
+
+        .post-content {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+
+        .post-title {
+            a {
+                font-size: 30px;
+                line-height: 1.4;
+
+                @include sm {
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+
+    &.is-dark {
+
+        .post-img {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .post-content {
+
+
+            .post-tag {
+
+
+                .tag-item {
+
+                    color: rgb(202, 202, 202);
+
+                }
+            }
+
+            .post-date {
+
+                color: #ebebeb;
+            }
+
+            .post-author {
+                a {
+                    color: $primary;
+                }
+            }
+
+            .post-title {
+                a {
+                    color: white;
+
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .read-more {
+                color: white;
+            }
+
+            .post-description {
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+/*=========================
+======= Subscribe
+===========================*/
+.subscribe-box {
+    background: $primary;
+    color: $white;
+    width: 100%;
+    padding: 5rem;
+
+    .description {
+        font-size: 25px;
+        font-family: "Avant Garde Gothic";
+    }
+
+    .span {
+        margin-right: 5px;
+    }
+
+    .btn {
+        margin-bottom: .5rem;
+    }
+}
+
+/*=========================
+======= contact-boxes
+===========================*/
+.contact-boxes {
+    .contact-box {
+        padding: 50px 30px;
+        box-shadow: 0 28px 50px rgba(77, 91, 120, 0.15);
+        border-bottom: solid 2px #f06;
+
+        @include sm {
+            padding: 25px 15px;
+
+        }
+
+        &.is-active {
+            background: #f3f3f3;
+            box-shadow: none;
+            border: none;
+        }
+
+
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 20px;
+            color: $primary;
+            font-size: 20px;
+
+        }
+
+    }
+}
+
+.contact-form-wrap {
+    max-width: 600px;
+    margin: auto;
+
+    .contact-form {
+        margin-top: 40px;
+    }
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 0 #ffff;
+    box-shadow: 0 17px 43px #e1e4e5;
+    padding: 60px;
+    background: #fff;
+    border-radius: 10px;
+
+
+    @include sm {
+        padding: 25px 15px;
+
+    }
+
+    iframe {
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+
+/*=========================
+======= progress 
+===========================*/
+
+.progress-work {
+
+    margin-top: 80px;
+
+    @include lg {
+        margin-top: 70px;
+
+
+    }
+
+    //styling
+    $animationTime: 1.5s;
+
+    $howManySteps: 10;
+
+    .progress {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+        margin-bottom: 30px;
+
+        @include lg {
+            width: 150px;
+            height: 150px;
+        }
+
+        @include md {
+            width: 125px;
+            height: 125px;
+        }
+
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 7px solid #f3f3f3;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        >span {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .progress-left {
+            left: 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 7px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+            border-color: $primary;
+
+
+        }
+
+        .progress-left .progress-bar {
+            left: 100%;
+            border-top-right-radius: (200px/2);
+            border-bottom-right-radius: (200px/2);
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+            //animation: loading-2 1.5s linear forwards 1.8s;
+        }
+
+        .progress-right {
+            right: 0;
+
+            .progress-bar {
+                left: -100%;
+                border-top-left-radius: (200px/2);
+
+                border-bottom-left-radius: (200px/2);
+
+                border-right: 0;
+                -webkit-transform-origin: center right;
+                transform-origin: center right;
+                //animation: loading-1 1.8s linear forwards;
+            }
+        }
+
+        .progress-value {
+            display: flex;
+            border-radius: 50%;
+            font-size: 36px;
+            text-align: center;
+            line-height: 20px;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-weight: bold;
+
+
+            width: 100%;
+
+            div {
+                margin-top: 10px;
+            }
+
+            span {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+        }
+    }
+
+    &.is-blue {
+        .progress-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 7px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+            border-color: #563cc9 !important;
+
+
+        }
+    }
+
+    /* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+    @for $i from 1 through $howManySteps {
+        $stepName: ($i*(100 / $howManySteps));
+
+        //animation only the left side if below 50%
+        @if $i <=($howManySteps/2) {
+            .progress[data-percentage="#{$stepName}"] {
+                .progress-right .progress-bar {
+                    animation: loading-#{$i} $animationTime linear forwards;
+                }
+
+                .progress-left .progress-bar {
+                    animation: 0;
+                }
+            }
+        }
+
+        //animation only the right side if above 50%
+        @if $i>($howManySteps/2) {
+            .progress[data-percentage="#{$stepName}"] {
+                .progress-right .progress-bar {
+                    animation: loading-#{($howManySteps/2)} $animationTime linear forwards; //set the animation to longest animation
+                }
+
+                .progress-left .progress-bar {
+                    animation: loading-#{$i - ($howManySteps/2)} $animationTime linear forwards $animationTime;
+                }
+            }
+        }
+    }
+
+    //animation
+    @for $i from 1 through ($howManySteps/2) {
+        $degrees: (180/($howManySteps/2));
+        $degrees: ($degrees*$i);
+
+        @keyframes loading-#{$i} {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate($degrees);
+                transform: rotate(#{$degrees}deg);
+            }
+        }
+    }
+
+
+}
+
+.contact-info-list-warpper {
+    @include md {
+        margin-top: 30px;
+    }
+}
+
+/*=========================
+======= sidebar blog 
+===========================*/
+.blog-sidebar {
+    margin-top: 80px;
+
+    .widget {
+        margin-bottom: 40px;
+    }
+
+    .widget-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .widget-desc {
+        margin-bottom: 20px;
+    }
+
+    .search-group {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .search-input {
+        border-radius: 10rem;
+        width: 100%;
+        padding: 10px 20px;
+        background: #f4f5fb;
+        border: none;
+        outline: none;
+    }
+
+    .search-submit {
+        position: absolute;
+        background: transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+
+        ion-icon {
+            font-size: 25px;
+        }
+    }
+
+    .email-group {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .email-input {
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px 20px;
+        background: #f4f5fb;
+        border: none;
+        outline: none;
+    }
+
+    .email-submit {
+        font-size: 14px;
+    }
+
+    .ads {
+        border-radius: 5px;
+        box-shadow: 0 15px 29px -4px #3f49621f;
+        padding: 2rem;
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+
+        }
+    }
+
+    .tagcloud a {
+        display: inline-block;
+        padding: 4px 10px;
+        font-size: 14px !important;
+        background: #eeeff7;
+        border-radius: 3px;
+        color: #303037;
+        transition: all .3s;
+        margin: 3px 1px 2px;
+        font-size: 12px;
+
+        &:hover {
+            background: #e0e1eb;
+
+        }
+    }
+
+    ul .cat-item {
+        padding: 12px 15px;
+        border-bottom: 1px solid #eeeff7;
+
+        a {
+            color: $dark;
+        }
+    }
+
+    ul .cat-item:first-of-type {
+        border-top: 1px solid #eeeff7;
+    }
+
+    .post-group__thumb {
+        display: block;
+        position: relative;
+        outline: 0
+    }
+
+    .post-group__thumb img {
+        -webkit-transition: -webkit-transform .7s ease;
+        transition: -webkit-transform .7s ease;
+        transition: transform .7s ease;
+        transition: transform .7s ease, -webkit-transform .7s ease;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        width: 100%;
+
+    }
+
+    .post-group__thumb:before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: #000;
+        -webkit-transition: opacity .6s;
+        transition: opacity .6s;
+        opacity: 0
+    }
+
+    .post-group__thumb:hover img {
+        -webkit-transform: scale(1.1) translateZ(0);
+        transform: scale(1.1) translateZ(0);
+    }
+
+    .post-group__thumb:hover:before {
+        opacity: .2
+    }
+
+    .post-group__meta {
+        color: #8b8c99
+    }
+
+    .post-group__meta a {
+        font-weight: 700
+    }
+
+    .post-group {
+        position: relative
+    }
+
+    .post-group--md .post-group__meta {
+        margin: 15px 0 8px;
+        font-size: 14px
+    }
+
+    .post-group--lg {
+        margin-bottom: 70px
+    }
+
+    .post-group--lg .post-group__meta {
+        margin: 22px 0 15px
+    }
+
+
+    .post-group--lg .author__name {
+        font-size: 18px
+    }
+
+
+    .post-group .h3-h4 a,
+    .post-group .h6 a {
+        color: #303037;
+        transition: color .2s
+    }
+
+    .post-group__left {
+        width: 82px;
+        float: left;
+    }
+
+    .post-group__right {
+        width: calc(100% - 82px);
+        float: left;
+        padding-left: 15px;
+    }
+
+    .post-group .h3-h4 a:hover,
+    .post-group .h6 a:hover {
+        color: $primary;
+    }
+
+    .post-group--sm .h6 {
+        font-size: 18px;
+        margin: -5px 0 5px;
+        line-height: 1.4;
+        font-family: $font-primary;
+    }
+
+    .post-group--sm {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .post-group--sm .post-group__desc p {
+        font-size: 14px;
+        color: #8b8c99;
+        margin: 0;
+        line-height: 1.3
+    }
+
+
+}

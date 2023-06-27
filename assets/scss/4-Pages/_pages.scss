@@ -1,0 +1,394 @@
+/*=========================
+======= article page
+===========================*/
+.article-page {
+    max-width: 810px;
+    margin: -185px auto 0;
+    position: relative;
+    z-index: 1;
+
+    .article-head {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+        border-bottom: 4px solid rgb(242, 242, 242);
+    }
+
+    .article-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .article-meta {
+        margin: 40px 0;
+
+        .article-tag {
+            color: $primary;
+            font-size: 13px;
+            padding: 4px 18px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: rgb(255, 255, 255);
+            background-color: rgb(46, 46, 46);
+            text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.9);
+
+            border-radius: 2rem;
+        }
+
+        .article-social {
+            display: flex;
+            justify-content: space-around;
+            color: $primary;
+            padding: 4px 18px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: rgb(255, 255, 255);
+            background-color: rgb(46, 46, 46);
+            text-transform: uppercase;
+            background: #000;
+            border-radius: 2rem;
+
+
+            li {
+                margin-left: .5rem;
+
+                @include first(1) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+
+    }
+
+    .article-title {
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 40px;
+        margin-bottom: 40px;
+
+        @include md {
+            font-size: 30px;
+        }
+    }
+
+    .article-date {
+        font-size: 13px;
+
+        color: #615f6c;
+    }
+
+    .article-author {
+        font-size: 13px;
+
+        a {
+            color: $primary;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .article-body {
+        img {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .img-by {
+            background: #f3f3f3;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: flex;
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+
+        .blockquote {
+            font-weight: bold;
+            margin-top: 40px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .acticle-footer {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        background: #f3f3f3;
+        padding: 20px;
+
+
+        .article-social {
+
+            li {
+                margin: 0rem .5rem;
+            }
+        }
+    }
+}
+
+/*=========================
+======= job page
+===========================*/
+.job-page {
+    .job-wrap {
+        h3 {
+            line-height: 1.8;
+            margin: 15px 0px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        li {
+            list-style: circle !important;
+
+        }
+
+        .job-subtitle2 {
+            color: rgb(38, 38, 38);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.3;
+            padding-top: 30px;
+            margin: 35px 0px 25px;
+            border-top: 1px solid rgb(228, 228, 228);
+        }
+    }
+
+    .job-btns {
+        margin-top: 40px;
+    }
+
+    .list-group {
+        .list-group-item {
+            border: none;
+            position: relative;
+            margin: 0px 0px 10px 20px;
+            padding: 0;
+            padding-left: 20px;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                background-color: $primary;
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+            }
+        }
+    }
+
+}
+
+.sidebar-wrap {
+    margin-top: 140px;
+
+    .widget-title {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        position: relative;
+        margin-bottom: 60px;
+        color: $primary;
+        font-family: "TradeGothic";
+        font-weight: bold;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            height: 2px;
+            width: 40px;
+            background: $primary;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 2px;
+            background-color: #282828;
+            left: 42px;
+            top: -10px;
+        }
+    }
+
+    .jobs-widget {
+        ul {
+            padding-left: 0;
+            margin: 5px 0px 40px;
+        }
+
+        .type-title {
+            position: relative;
+            text-transform: uppercase;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                height: 2px;
+                width: 20px;
+                background: #000;
+            }
+        }
+
+        li {
+            a {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/*=========================
+======= changelog page
+===========================*/
+.changelog-page {
+    background: #f4f5fb;
+
+    .version {
+        text-transform: uppercase;
+        color: $primary;
+        text-align: center;
+        font-family: $font-primary;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .description {
+        text-transform: capitalize;
+        margin-top: 20px;
+        text-align: center;
+        font-family: $font-primary;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .date {
+        color: #919DAB;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 28px 30px;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0px 4px 6px rgba(36, 25, 94, 0.1);
+        color: #0A0A40;
+        border-radius: 50rem;
+    }
+
+    .text-adaptive {
+        padding: 5px 10px;
+
+    }
+
+    .type {
+        color: #ffff;
+        background: #ae64ff;
+        padding: 5px 15px;
+        border-radius: 30px;
+    }
+}
+
+/*=========================
+======= 404 page
+===========================*/
+.page-404 {
+    height: calc(100vh - 6rem);
+    background: #faf9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+
+    @include md {
+        height: auto;
+    }
+
+    text-align: center;
+
+    .title {
+        color: #ffff;
+        font-size: 22px;
+        text-align: center;
+
+
+        @include md {
+            font-size: 18px;
+        }
+    }
+
+    .fortyfor {
+        text-align: center;
+        color: #ffff;
+
+        font-size: 140px;
+
+        @include md {
+            font-size: 35px;
+        }
+    }
+
+
+    a {
+        color: $primary;
+    }
+
+}
+
+/*=========================
+======= Sign in page
+===========================*/
+.page-sign {
+    padding-top: 10rem;
+
+    .sign-wrap {
+        box-shadow: 0 15px 29px -4px #3f49621f;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+
+        .sign-right {
+            height: 50rem;
+            background: $primary-bg;
+        }
+    }
+
+
+}
+
+.pricing-in-page{
+    margin-top: -8rem;
+    background: transparent !important;
+}
+.space-4{
+    margin: 8rem 0 0;
+}

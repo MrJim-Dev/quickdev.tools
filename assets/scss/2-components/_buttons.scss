@@ -1,0 +1,264 @@
+/* components > _Buttons.scss                                                    | coinkit */
+
+/*** TABLE OF CONTENTS
+======================================================
+    0/ Generale
+    1/ Button sizes
+`  2/ Button variations
+    3/ other buttons
+===================================================***/
+
+/* ====================================================
+- - - - - - - - - 0/ Generale
+=====================================================*/
+button {
+  outline: none !important;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 100%;
+  white-space: nowrap;
+  border: none;
+
+  &:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.8;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    background: unset !important;
+  }
+}
+
+.btn {
+  text-align: center;
+  padding: 0.8rem 2rem;
+  line-height: 1.5;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.25s cubic-bezier(0, 0, 0.41, 1);
+  position: relative;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: $font-primary;
+  border-radius: 5px;
+    color: #31456A;
+
+  ion-icon {
+    vertical-align: inherit;
+    padding: 0 0 0 0.5rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &-round {
+    border-radius: 50rem;
+  }
+
+  &-outline {
+    border: solid 2px;
+    background: transparent !important;
+  }
+}
+
+.light-skin {
+  .btn {
+    color: $dark;
+  }
+}
+
+.footer-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  background: $primary;
+  color: $white;
+
+  @include sm {
+    position: relative;
+    width: 100%;
+    margin: auto 6px;
+    border-radius: 5px;
+  }
+
+  &::before {
+    content: "";
+    background: url(./../images/others/btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+  }
+}
+
+.btn-opacity {
+  background: rgba($primary, 0.1);
+  color: $primary;
+
+  &.btn-blue {
+    background: rgba(#563cc9, 0.1);
+    color: #563cc9;
+  }
+}
+
+.btn2 {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  background: $primary;
+  color: $white;
+
+  @include sm {
+    position: relative;
+    width: 95%;
+    margin: auto 1rem;
+  }
+
+  &::before {
+    content: "";
+    background: url(./../images/others/btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+  }
+}
+
+/* =====================================================
+- - - - - - - - - 1/ Button sizes
+======================================================*/
+.btn-sm {
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.btn-lg {
+  padding: 0.7rem 2rem;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.btn-grad1 {
+  background: $grad1;
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+/* ==================================================+===
+- - - - - - - - - 2/ Button variations
+=======================================================*/
+.btn-primary {
+  background: $primary;
+  color: $white;
+  border: solid 2px $primary;
+
+  &.btn-sh {
+    box-shadow: 0 14px 35px -11px $primary;
+  }
+
+  &.btn-outline {
+    border: solid 2px $primary;
+    background: transparent !important;
+    color: $primary;
+  }
+
+  &.btn-outline-bottom {
+    border-bottom: solid 3px $primary;
+    background: transparent !important;
+    color: $primary !important;
+  }
+
+  &.btn-hover-line {
+    &:hover {
+      background: transparent;
+      border: solid 2px $primary;
+      color: $primary;
+    }
+  }
+
+  &:hover {
+    outline: none;
+    background: darken($primary, 2%) !important;
+    border: solid 2px $primary;
+  }
+}
+
+.btn-white {
+  background: #fff;
+
+  &.btn-outline {
+    color: white;
+    border: solid 2px white;
+  }
+}
+
+.btn-grad2 {
+  background: $grad2;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.btn-red {
+  background: $red;
+  color: $white;
+  border: solid 1px $red;
+}
+
+.btn-green {
+  background: $green;
+  color: $white;
+  border: solid 1px $green;
+}
+
+.btn-dark {
+  background: $dark;
+  color: $white;
+  border: solid 1px $dark;
+
+  &:hover {
+    color: $primary;
+    background: $dark;
+    border: solid 1px $dark;
+  }
+
+  &.btn-sh {
+    box-shadow: 0 14px 35px -11px $dark;
+  }
+
+  &.btn-outline {
+    border: solid 2px $dark;
+    background: transparent !important;
+    color: $dark;
+  }
+
+  &.btn-outline-bottom {
+    border-bottom: solid 3px $dark;
+    background: transparent !important;
+    color: $dark;
+  }
+}
+
+/* ==================================================+===
+- - - - - - - - - 3 / outher button
+=======================================================*/

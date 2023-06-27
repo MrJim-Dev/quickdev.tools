@@ -1,0 +1,1037 @@
+/* Helpers > _Classes.scss                                                    | olikit */
+
+/*** TABLE OF CONTENTS
+======================================================
+    0 / Color classes
+    1 / Gradient classes
+    2 / Padding classes
+    3 / Margin classes
+    4 / Hidden classes
+    5 / flex desiplay
+    6 / border-radius
+    7 / box-Shadows
+    8 / Animations
+    9 / Typography
+    10 / OTHER
+=================================================== ***/
+
+/* =======================================================
+  - - - - - - - - 2 / Padding classes
+========================================================== */
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-helf {
+    padding: 0.5rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.p-6 {
+    padding: 6rem;
+}
+
+.p-7 {
+    padding: 7rem;
+}
+
+.p-8 {
+    padding: 8rem;
+}
+
+.p-9 {
+    padding: 9rem;
+}
+
+.p-10 {
+    padding: 10rem;
+}
+
+/* ------------------------------------ padding top*/
+
+.pt-helf {
+    padding-top: 0.5rem;
+}
+
+.pt-0 {
+    padding-top: 0rem !important;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pt-4 {
+    padding-top: 4rem;
+}
+
+.pt-5 {
+    padding-top: 5rem;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.pt-7 {
+    padding-top: 7rem;
+}
+
+.pt-8 {
+    padding-top: 8rem;
+}
+
+.pt-9 {
+    padding-top: 9rem;
+}
+
+.pt-10 {
+    padding-top: 10rem;
+}
+
+/* ------------------------------------ padding bottom*/
+
+.pb-helf {
+    padding-bottom: 0.5rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.pb-4 {
+    padding-bottom: 4rem;
+}
+
+.pb-5 {
+    padding-bottom: 5rem;
+}
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+.pb-7 {
+    padding-bottom: 7rem;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.pb-9 {
+    padding-bottom: 9rem;
+}
+
+.pb-10 {
+    padding-bottom: 10rem;
+}
+
+/* ------------------------------------ padding bottom*/
+
+.pl-helf {
+    padding-left: 0.5rem;
+}
+
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.pl-3 {
+    padding-left: 3rem;
+}
+
+.pl-4 {
+    padding-left: 4rem;
+}
+
+.pl-5 {
+    padding-left: 5rem;
+}
+
+.pl-6 {
+    padding-left: 6rem;
+}
+
+.pl-7 {
+    padding-left: 7rem;
+}
+
+.pl-8 {
+    padding-left: 8rem;
+}
+
+.pl-9 {
+    padding-left: 9rem;
+}
+
+.pl-10 {
+    padding-left: 10rem;
+}
+
+/* ------------------------------------ padding bottom*/
+.pr-sm-0 {
+    @include sm {
+        padding-right: 0 !important;
+    }
+}
+
+.pl-sm-0 {
+    @include sm {
+        padding-left: 0 !important;
+    }
+}
+
+.pr-helf {
+    padding-right: 0.5rem;
+}
+
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pr-3 {
+    padding-right: 3rem;
+}
+
+.pr-4 {
+    padding-right: 4rem;
+}
+
+.pr-5 {
+    padding-right: 5rem;
+}
+
+.pr-6 {
+    padding-right: 6rem;
+}
+
+.pr-7 {
+    padding-right: 7rem;
+}
+
+.pr-8 {
+    padding-right: 8rem;
+}
+
+.pr-9 {
+    padding-right: 9rem;
+}
+
+.pr-10 {
+    padding-right: 10rem;
+}
+
+/* =======================================================
+  - - - - - - - - 2 / Margin classes
+========================================================== */
+
+@include sm {
+    .mr-0-sm {
+        margin-right: 0rem !important;
+        ;
+    }
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-helf {
+    margin: 0.5rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+.m-4 {
+    margin: 4rem;
+}
+
+.m-5 {
+    margin: 5rem;
+}
+
+.m-6 {
+    margin: 6rem;
+}
+
+.m-7 {
+    margin: 7rem;
+}
+
+.m-8 {
+    margin: 8rem;
+}
+
+.m-9 {
+    margin: 9rem;
+}
+
+.m-10 {
+    margin: 10rem;
+}
+
+/* ------------------------------------ margin top*/
+.mt-sm-30 {
+    @include sm {
+        margin-top: 30px;
+        ;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+
+}
+
+.mt-helf {
+    margin-top: 0.5rem;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mt-9 {
+    margin-top: 9rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+/* ------------------------------------ margin bottom*/
+
+.mb-helf {
+    margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+.mb-9 {
+    margin-bottom: 9rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+
+/* ------------------------------------ padding bottom*/
+
+.ml-helf {
+    margin-left: 0.5rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.ml-4 {
+    margin-left: 4rem;
+}
+
+.ml-5 {
+    margin-left: 5rem;
+}
+
+.ml-6 {
+    margin-left: 6rem;
+}
+
+.ml-7 {
+    margin-left: 7rem;
+}
+
+.ml-8 {
+    margin-left: 8rem;
+}
+
+.ml-9 {
+    margin-left: 9rem;
+}
+
+.ml-10 {
+    margin-left: 10rem;
+}
+
+/* ------------------------------------ margin bottom*/
+
+.mr-helf {
+    margin-right: 0.5rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mr-3 {
+    margin-right: 3rem;
+}
+
+.mr-4 {
+    margin-right: 4rem;
+}
+
+.mr-5 {
+    margin-right: 5rem;
+}
+
+.mr-6 {
+    margin-right: 6rem;
+}
+
+.mr-7 {
+    margin-right: 7rem;
+}
+
+.mr-8 {
+    margin-right: 8rem;
+}
+
+.mr-9 {
+    margin-right: 9rem;
+}
+
+.mr-10 {
+    margin-right: 10rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+/* =======================================================
+  - - - - - - - - 3 / hidden classes
+========================================================== */
+
+.lg-hidden {
+    @include lg {
+        display: none;
+    }
+}
+
+.md-hidden {
+    @include md {
+        display: none;
+    }
+}
+
+.sm-hidden {
+    @include sm {
+        display: none;
+    }
+}
+
+/* =======================================================
+  - - - - - - - - 5 /  flex desiplay
+========================================================== */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.start {
+        justify-content: flex-start;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    @include md {
+        &.md-center {
+            justify-content: center;
+        }
+    }
+
+    @include sm {
+        &.sm-center {
+            justify-content: center;
+        }
+    }
+
+
+    &.vcenter {
+        align-items: center;
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &.vend {
+        align-items: flex-end;
+    }
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.is-column {
+        flex-direction: column;
+    }
+}
+
+.white-link {
+    color: $white;
+    transition: .3s;
+
+    &:hover {
+        opacity: .7;
+        color: $white;
+        font-size: 17px;
+    }
+}
+
+/* =======================================================
+  - - - - - - - - 6 /  border-radius
+========================================================== */
+
+.border-rad5 {
+    border-radius: 5px;
+}
+
+.border-rad10 {
+    border-radius: 10px;
+}
+
+.border-rad15 {
+    border-radius: 15px;
+}
+
+.border-rad20 {
+    border-radius: 20px;
+}
+
+.border-rad50 {
+    border-radius: 50px;
+}
+
+/* =======================================================
+  - - - - - - - - 7 /  box-Shadows
+========================================================== */
+
+.light-shadow {
+    box-shadow: 0px 10px 40px -10px rgba(209, 209, 209, 0.4);
+    border: solid 1px #edf8fa;
+    border-radius: 15px;
+}
+
+.simple-sh {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.01), 0 2px 5px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+
+.light-shadow-bottom {
+    box-shadow: 0 15px 40px -15px #edf8fa;
+    border: solid 1px #edf8fa;
+    border-radius: 15px;
+}
+
+.ultra-shadow {
+    box-shadow: 0 8px 30px 0 #edf8fa;
+    border: solid 1px #edf8fa;
+}
+.text-white{
+    color: white !important;
+}
+.text-dark{
+color: rgba(0, 0, 0, 0.01);
+}
+/* =======================================================
+  - - - - - - - - 8 /  Animations
+========================================================== */
+
+@keyframes anim-up-down {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 1rem);
+        transform: translate(0, 1rem);
+    }
+
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+.anim-up-down {
+    animation-name: anim-up-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animbg {
+    from {
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-size: 120%;
+        background-blend-mode: saturation;
+        background-repeat: no-repeat;
+
+    }
+
+    to {
+        background-size: 130%;
+        background-repeat: no-repeat;
+
+    }
+}
+
+@keyframes anim2 {
+    from {
+        height: 120%;
+        width: 120%;
+    }
+
+    50% {
+        height: 170%;
+        width: 170%;
+    }
+
+    70% {
+        height: 120%;
+        width: 120%;
+    }
+
+    to {
+        height: 130%;
+        width: 130%;
+    }
+}
+
+@keyframes anim1 {
+    from {
+        height: 180%;
+        width: 180%;
+    }
+
+    50% {
+        height: 140%;
+        width: 140%;
+    }
+
+    70% {
+        height: 150%;
+        width: 150%;
+    }
+
+    to {
+        height: 180%;
+        width: 180%;
+    }
+}
+
+/* =======================================================
+  - - - - - - - - 9 /  Text floats
+========================================================== */
+.text-primary {
+    color: $primary !important;
+}
+
+/* ----------------------------- Font Size */
+
+.font-s-1 {
+    font-size: 1rem;
+}
+
+.font-s-2 {
+    font-size: 2rem;
+}
+
+.font-s-3 {
+    font-size: 3rem;
+}
+
+.font-s-4 {
+    font-size: 4rem;
+}
+
+.font-s-5 {
+    font-size: 5rem;
+}
+
+.font-s-6 {
+    font-size: 6rem;
+}
+
+.font-s-7 {
+    font-size: 7rem;
+}
+
+.font-s-8 {
+    font-size: 8rem;
+}
+
+.font-s-9 {
+    font-size: 9rem;
+}
+
+.font-s-10 {
+    font-size: 10rem;
+}
+
+/* ----------------------------- Font weight */
+
+.font-w-400 {
+    font-weight: 400 !important;
+}
+
+.font-w-500 {
+    font-weight: 500 !important;
+}
+
+.font-w-600 {
+    font-weight: 600 !important;
+}
+
+/* ----------------------------- Text floats */
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-deco {
+    text-decoration: underline;
+}
+
+
+
+/* =======================================================
+  - - - - - - - - 10 /  OTHER
+========================================================== */
+
+.before-none {
+    &::before {
+        content: none !important;
+    }
+}
+
+/* ----------------------------- display none classes  */
+
+.sm-none {
+    @include sm {
+        display: none !important;
+    }
+}
+
+.md-none {
+    @include md {
+        display: none;
+    }
+}
+
+.lg-none {
+    @include lg {
+        display: none;
+    }
+}
+
+.xl-none {
+    @include xl {
+        display: none;
+    }
+}
+
+/* ------------------------------------ display block classes  */
+
+.sm-block {
+    @include sm {
+        display: block;
+    }
+}
+
+.md-block {
+    @include md {
+        display: block;
+    }
+}
+
+.lg-block {
+    @include lg {
+        display: block;
+    }
+}
+
+.xl-block {
+    @include xl {
+        display: block;
+    }
+}
+
+.mb-sm-20 {
+    @include md {
+        margin-bottom: 20px;
+    }
+}
+
+.top-border {
+    border-top: solid 1px #f3f3f3;
+}
+
+.min-30 {
+    margin-bottom: -30px;
+}
+
+.min-40 {
+    margin-bottom: -40px;
+}
+
+.min-3 {
+    margin-bottom: -1rem;
+}
+
+.mt-section {
+    margin-top: 70px;
+
+}
+
+.mb-sm-30 {
+    @include md {
+        margin-bottom: 30px;
+    }
+}
+
+.text-primary {
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+.rounded {
+    position: absolute;
+    width: 100%;
+    top: -11px;
+
+    @include lg {
+        top: -1px;
+    }
+}
+
+.text-red {
+    color: $red;
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.min-20 {
+    margin-bottom: -20px;
+}
+
+.text-copyright {
+    color: rgba(255, 255, 255, 0.548) !important;
+}
+
+.max-30 {
+    max-width: 30rem;
+}
+
+.max-20 {
+    max-width: 20rem;
+}
+
+.bg-grad2 {
+    background: $grad2 !important;
+}
+
+.bg-grad3 {
+    background: $grad3 !important;
+
+}
+
+.text-blue {
+    color: #563cc9 !important;
+}
+
+.text-green {
+    color: $green !important;
+}
+
+.bg-blue {
+    background: #563cc9 !important;
+}
+
+.hover-blue {
+    &:hover {
+        color: #563cc9 !important;
+    }
+
+}
+
+.bg-opacity {
+    background: rgba(0, 0, 0, 0.082);
+}
+
+.bg-pattern {
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url(../images/bg/pattern-bg.png);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+    }
+}

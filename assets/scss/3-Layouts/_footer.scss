@@ -1,0 +1,328 @@
+.footer {
+    margin: 0;
+
+    overflow-y: visible !important;
+
+
+    .copyright {
+        font-size: 1rem;
+        color: #595b5d
+    }
+
+    .footer-shape {
+
+        position: absolute;
+        top: 0rem;
+        right: -5rem;
+        transform: scale(.5);
+        z-index: 0;
+        height: 100%;
+    }
+
+    .footer-shape-top {
+
+        position: absolute;
+        top: -2rem;
+        left: -5rem;
+        transform: scale(.8);
+        z-index: 0;
+        height: 100%;
+    }
+
+}
+
+
+// ---------------------------------- footer in-index
+.footer {
+    color: $dark;
+
+    &.in-index {
+        padding: 1rem 0 1rem;
+
+    }
+
+    &.has-style1 {
+        &.is-grad1 {
+            background: $grad1;
+
+            .footer-head {
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            .footer-body {
+                background: transparent !important;
+            }
+        }
+
+        .footer-head {
+            position: relative;
+            background: $primary-bg;
+
+            .to-top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -2rem;
+                transform: translateX(-50%);
+                left: 50%;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                border: solid 5px #fff;
+                background: $primary;
+                z-index: 9;
+                opacity: 1 !important;
+                cursor: pointer;
+
+                &:hover {
+                    background: $primary !important;
+                    opacity: 1;
+                }
+
+                ion-icon {
+                    color: #ffff;
+                }
+            }
+        }
+    }
+
+
+    &.has-style2 {
+        .footer-head {
+            position: relative;
+            background: #0E132C;
+
+            .to-top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -2rem;
+                transform: translateX(-50%);
+                left: 50%;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                border: solid 5px #fff;
+                background: $primary;
+                z-index: 9;
+                opacity: 1 !important;
+                cursor: pointer;
+
+                &:hover {
+                    background: $primary !important;
+                    opacity: 1;
+                }
+
+                ion-icon {
+                    color: #ffff;
+                }
+            }
+        }
+
+        .footer-body {
+            background: #0E132C;
+
+        }
+    }
+
+    &.is-light {
+        background: $white;
+        color: $dark;
+
+        .footer-body {
+            background: $white;
+            color: $dark;
+
+            p {
+                color: $dark;
+
+
+            }
+
+            .list-title {
+                color: $dark;
+
+                &::before {
+                    color: $dark;
+                    background: #000;
+                }
+
+            }
+
+            .list-items {
+                color: $dark;
+
+
+                li {
+                    a {
+                        color: $dark;
+                    }
+                }
+            }
+
+            .copyright {
+                p {
+                    color: $dark;
+                }
+            }
+        }
+    }
+
+
+    // ---------------------------------- footer logo and info
+
+    .footer-body {
+        background: darken($primary-bg, 5%);
+
+        overflow: hidden;
+        padding: 70px 0 35px;
+    }
+
+    .social-footer {
+        margin-top: 1rem;
+
+        a {
+            ion-icon {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .footer-desc {
+        margin-bottom: 2rem;
+
+        .logo {
+            margin-bottom: 1rem;
+
+            img {
+                height: 4rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: 20rem;
+            color: $white;
+
+        }
+    }
+
+    // ---------------------------------- footer list
+
+    .list-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 1.5rem;
+        color: $white;
+
+    }
+
+    .list-items {
+        margin-bottom: 2rem;
+        color: $white;
+
+
+        li {
+            margin-bottom: .5rem;
+
+            a {
+                font-size: 1rem;
+                color: #c5c5c5;
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 35px;
+
+        p {
+            padding: 2rem 0 2rem;
+            font-size: 1rem;
+            margin: 0;
+            color: rgb(165, 165, 165)
+        }
+    }
+
+
+    .contact-item {
+        margin-bottom: 2rem;
+
+        p {
+            color: #fff;
+        }
+
+        h6 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: relative;
+            color: $primary;
+            margin-bottom: .5rem;
+
+            &::before {
+
+                background: $primary;
+            }
+        }
+    }
+
+
+    form {
+        position: relative;
+        height: 4rem;
+        background: #fff;
+        border-radius: 50rem;
+        max-width: 30rem;
+        width: 100%;
+        margin-bottom: 4rem;
+        transition: .2s;
+
+        @include sm {
+            height: fit-content;
+            padding-bottom: 1rem;
+            background: transparent;
+
+        }
+    }
+
+
+
+
+}
+
+.divider {
+    width: 100%;
+    position: relative;
+    height: 5vw;
+    pointer-events: none;
+    -webkit-mask-image: url(../../images/others/divider.svg);
+    mask-image: url(../../images/others/divider.svg);
+    -webkit-mask-size: 100% 101%;
+    mask-size: 100% 101%;
+    background: #fff;
+}
+
+.footer-index {
+    background: url(../images/others/footer_bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    padding: 2rem 0;
+
+    img {
+        max-height: 2rem;
+    }
+
+    .links {
+        a {
+            margin-right: 2rem;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-family: $font-primary;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}

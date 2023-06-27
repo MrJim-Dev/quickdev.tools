@@ -1,0 +1,107 @@
+.index-page {
+
+    .demo {
+        border-radius: 2px;
+        position: relative;
+
+        @include md {
+            padding: 15px;
+        }
+
+        &-title {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            line-height: 1.5;
+            font-weight: bold;
+            max-width: 40rem;
+            color: #31456A;
+
+            @include md {
+                font-size: 2.2rem;
+            }
+
+            .has-line {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: .2rem;
+                    top: -1rem;
+                    width: 103%;
+                    left: 0;
+                    background: $primary;
+                    z-index: 0;
+                }
+            }
+
+            @include md {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .buy {
+        max-width: 38rem;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 2rem;
+        position: relative;
+        box-shadow: 0 6px 12px 1px #e5e5f2;
+
+        .pricing {
+            background: $bg-grey;
+            border-radius: 5px;
+            padding: 2rem;
+        }
+
+        .pricing-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 1
+        }
+
+        .button {
+            position: relative;
+            z-index: 1
+        }
+
+        &::before {
+            content: url(../img/others/buy-shape2.svg );
+            position: absolute;
+            right: 0;
+            bottom: 4rem;
+            height: 4rem;
+            width: 4rem;
+            z-index: 0;
+        }
+
+        &::after {
+            content: url(../img/others/buy-shape1.svg );
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 4rem;
+            width: 4rem;
+            z-index: 0;
+        }
+    }
+
+    .buy-list {
+        z-index: 1;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            svg {
+                background: $primary;
+                border-radius: 20rem;
+                padding: .2rem;
+                color: $white;
+                margin-right: .5rem;
+            }
+        }
+    }
+}

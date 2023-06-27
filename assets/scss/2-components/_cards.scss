@@ -1,0 +1,288 @@
+.card {
+    border-radius: 5px;
+    box-shadow: 0 0 0 0 #f3f3f3;
+
+    .card-title2 {
+        color: $white;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .card-title {
+        position: relative;
+        z-index: 2;
+        font-size: 1.3rem;
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        font-weight: 700;
+        padding: 1rem 0;
+        transition: .15s ease-in-out;
+        line-height: 1.5;
+    }
+
+    .card-content {
+        padding: 2rem;
+    }
+
+    &.in-demo {
+        .card-title2 {
+            color: $white;
+            padding-left: 20px;
+            padding-bottom: 0;
+            padding-top: 10px;
+        }
+
+        background: #54538A;
+        -webkit-transition: .15s ease-in-out;
+        transition: .15s ease-in-out;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+
+        figure {
+            margin: 0 0 0;
+        }
+
+
+        .card-image {
+            width: 100%;
+            background: #494949;
+
+        }
+
+        .card-title2 {
+            font-size: 1.2rem;
+        }
+
+        .feather {
+            width: 50px;
+            height: 50px;
+            stroke: currentColor;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            color: #fff
+        }
+
+        .card-description {
+            padding-left: 20px;
+            font-size: 14px;
+        }
+
+        .card-title {
+            position: relative;
+            z-index: 2;
+            font-size: 1.3rem;
+            align-items: center;
+            display: flex;
+            flex-grow: 1;
+            font-weight: 700;
+            padding: 1rem;
+            transition: .15s ease-in-out;
+            font-size: 1.2rem;
+            color: #f3f3f3;
+            margin-bottom: 0;
+
+            &.new {
+                &::before {
+                    content: "New";
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    right: 15px;
+                    bottom: 15px;
+                    font-size: 16px;
+                    background: #FF0066;
+                    padding: 4px 8px 4px;
+                    line-height: 100%;
+                    border-radius: 4px;
+                    font-family: "TradeGothic"
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-.5rem);
+
+            .card-title {
+                color: $primary;
+
+                &::before {
+                    background: #1f1f1f;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        &.soon {
+            cursor: default;
+
+            &:hover {
+                transform: none;
+
+                .card-title {
+                    color: #ffffff;
+
+                    &::before {
+                        background: $primary;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        &.new {
+            cursor: pointer;
+
+            &:hover {
+                transform: none;
+
+                .card-title {
+                    &::before {
+                        background: $primary;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-dark {
+        background: $card-dark;
+        color: $white;
+
+        .title {
+            color: $white;
+            margin-bottom: 2.5rem;
+        }
+
+        .subtitle {
+            color: $white;
+        }
+    }
+
+    &.in-feautures {
+        padding: 2rem;
+        box-shadow: 0 10px 14px 0 #e8e8f6;
+        transition: .15s ease-in-out;
+
+        .icon {
+            width: 4rem;
+            height: 4rem;
+            background: $primary;
+            border-radius: 100%;
+            color: $white;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+        }
+
+        .card-description {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            box-shadow: 0 14px 20px 0 #e2e2f6;
+            transform: translateY(-5px)
+        }
+    }
+
+    &.in-feautures2 {
+        padding: 2rem;
+        transition: .15s ease-in-out;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        background: $bg-grey;
+
+        .icon {
+            width: 100%;
+            margin-bottom: 2rem;
+            transition: 0.2s cubic-bezier(0.39, 0.68, 0.27, 1.78);
+            height: auto;
+            margin-bottom: 1rem;
+
+
+            img {
+                height: 5rem;
+                width: 5rem;
+                margin: 0 auto;
+
+            }
+        }
+
+        .title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            text-align: center;
+
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        &:hover {
+            .icon {
+                transform: scale(1.1) translateY(-5px)
+            }
+        }
+
+    }
+
+    &.in-download {
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4rem;
+    }
+
+    &.in-help {
+        box-shadow: 0 15px 29px -4px #3f49621f;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+
+        .card-img {
+            padding: 2rem;
+            max-width: 8rem;
+            padding-right: 0;
+
+            @include md {
+                padding: 2rem 2rem 0;
+
+            }
+        }
+
+        .card-title {
+            padding: 0;
+        }
+    }
+
+    &-free {
+        padding: 3rem;
+        border-radius: 10px;
+        color: $white;
+        background: $card-dark2
+    }
+}
+
+.card-faq {
+    padding: 40px 30px;
+
+    .title {
+        margin-bottom: 20px;
+    }
+}
